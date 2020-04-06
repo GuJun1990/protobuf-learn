@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option java_outer_classname = "PB";
+
+message Info {
+    optional bool   is_valid            = 1;
+    optional int64  expand_bit          = 2;
+    optional string title               = 3;
+    optional int32  channel_id          = 4;
+    repeated string virtual_channel     = 12;
+    optional double sns_score           = 13;
+    repeated int64 child_clip_id        = 111;
+}
